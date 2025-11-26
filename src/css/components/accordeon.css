@@ -1,3 +1,31 @@
-/**
-* Accordeon
-*/
+.accordeon {
+    display: flex;
+    gap: 1rem;
+}
+
+/* details fermé + ouvert */
+details {
+    display: flex;
+    width: 150px;
+    /* fermé */
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+/* quand c’est ouvert */
+details[open] {
+    width: 350px;
+    /* ouvert */
+}
+
+details>div {
+    margin-left: 1rem;
+    width: 180px;
+}
+
+/* image */
+summary img {
+    width: 100px;
+    display: block;
+}
+
